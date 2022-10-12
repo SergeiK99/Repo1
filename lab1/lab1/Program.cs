@@ -7,12 +7,12 @@ namespace lab1
         static void Main(string[] args)
         {
             int a = Convert.ToInt32(Console.ReadLine());
-            if (a%4==0)
+            if ((a%4==0)&&((a % 100 != 0) || (a % 400 == 0)))
             {
                 Console.WriteLine("Год високосный");
 
             }
-            else
+            else 
             {
                 Console.WriteLine("Год не високосный");
             }
